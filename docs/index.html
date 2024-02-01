@@ -16,7 +16,9 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <style>
-            
+            .ccc1:hover{
+
+            }
         </style>
     </head>
     <body>
@@ -26,7 +28,7 @@
         <div class="masthead">
             <div class="masthead-content text-white">
                 <div class="container-fluid px-4 px-lg-0">
-                    <img src="images.jpg" alt="tsai" class="ccc1">
+                    <img src="images.jpg" alt="tsai" id="cccimg"><br>
                     <h1 class="fst-italic lh-1 mb-4">Our Website is Coming Soon</h1>
                     <p class="mb-5">We're working hard to finish the development of this site. Sign up below to receive updates and to be notified when we launch!</p>
                     <!-- * * * * * * * * * * * * * * *-->
@@ -83,5 +85,17 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    
+        <script>
+            let img1 = document.querySelector("#cccimg");
+            let pic = document.querySelector("#cccimg")
+
+            img1.addEventListener("mouseenter", function(
+                pic.src = "main.png"
+            ));
+            img1.addEventListener("mouseleave", function(
+                pic.src = "images.jpg"
+            ));
+        </script>
     </body>
 </html>
