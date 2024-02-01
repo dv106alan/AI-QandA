@@ -88,14 +88,19 @@
     
         <script>
             let img1 = document.querySelector("#cccimg");
-            let pic = document.querySelector("#cccimg")
+            let pic = document.querySelector("#cccimg");
 
-            img1.addEventListener("mouseenter", function(
-                pic.src = "main.png"
-            ));
-            img1.addEventListener("mouseleave", function(
-                pic.src = "images.jpg"
-            ));
+            img1.addEventListener("mouseenter", function(){
+                pic.src = "main.png";
+                console.log("mouse enter");
+            });
+            button.addEventListener("mouseleave", function(){
+                pic.src = "images.jpg";
+                console.log("mouse leave");
+            })
+            // img1.addEventListener("mouseleave", function(
+            //     pic.src = "images.jpg"
+            // ));
         </script>
     </body>
 </html>
